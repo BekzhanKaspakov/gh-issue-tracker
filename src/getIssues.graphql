@@ -1,0 +1,23 @@
+query getIssues(
+  $login: String!
+  $repository: String!
+  $perPage: Int!
+  $afterCursor: String
+) {
+  user(login: $login) {
+    repository(name: $repository) {
+      issues(first: $perPage, after: $afterCursor) {
+        edges {
+          cursor
+          node {
+            title
+            comments {
+              totalCount
+            }
+            bodyText
+          }
+        }
+      }
+    }
+  }
+}

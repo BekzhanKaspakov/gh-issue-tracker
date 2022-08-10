@@ -1,0 +1,14 @@
+query getRepositories($login: String!, $perPage: Int, $afterCursor: String) {
+  user(login: $login) {
+    name
+    repositories(first: $perPage, after: $afterCursor) {
+      edges {
+        cursor
+        node {
+          name
+          description
+        }
+      }
+    }
+  }
+}

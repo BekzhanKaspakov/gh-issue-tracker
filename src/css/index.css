@@ -1,0 +1,151 @@
+.App {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.App-main {
+    flex: 1;
+}
+
+.App-content_large-header,
+.App-content_small-header {
+    margin-top: 54px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .App-content_large-header {
+        margin-top: 123px;
+    }
+
+    .App-content_small-header {
+        margin-top: 68px;
+    }
+}
+
+.RepositoryItem {
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.RepositoryItem-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .RepositoryItem-title {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.RepositoryItem-title-action {
+    margin-left: 10px;
+}
+
+.RepositoryItem-description {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .RepositoryItem-description {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.RepositoryItem-description-info {
+    margin-right: 20px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .RepositoryItem-description-info {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+.RepositoryItem-description-details {
+    text-align: right;
+    white-space: nowrap;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .RepositoryItem-description-details {
+        text-align: center;
+    }
+}
+
+.Navigation {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #24292e;
+    display: flex;
+    align-items: baseline;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .Navigation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.Navigation-link {
+    font-size: 12px;
+    letter-spacing: 3.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.Navigation-link a {
+    color: #ffffff;
+}
+
+.Navigation-search {
+    padding: 0 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .Navigation-link {
+        padding: 10px;
+    }
+
+    .Navigation-search {
+        padding: 10px 10px;
+    }
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24292e;
+    padding: 20px;
+    color: #ffffff;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .Footer {
+        text-align: center;
+    }
+}
+
+.Footer-text {
+    opacity: 0.35;
+}
+
+.Footer-link {
+    color: #ffffff;
+    opacity: 1;
+}
